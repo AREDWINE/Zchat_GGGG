@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYf-m5-siJ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="vkV-nV-iU7">
+            <objects>
+                <viewController storyboardIdentifier="LogInVC" id="BYf-m5-siJ" customClass="LoginViewController" customModule="Zchat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="keW-JF-uZm"/>
+                        <viewControllerLayoutGuide type="bottom" id="zHz-0X-u4A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="poj-2o-0zO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlightTiger.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LvH-lD-ZcI"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3t5-v1-5Po">
+                                <frame key="frameInset" minX="42" minY="149" width="273" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdt-3v-kJX">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="7mM-xN-pOw"/>
+                                    <constraint firstAttribute="height" constant="120" id="Pv6-Tk-nlc"/>
+                                </constraints>
+                                <state key="normal" image="googleButton.png"/>
+                                <connections>
+                                    <action selector="btnGoogleLoginAction:" destination="BYf-m5-siJ" eventType="touchUpInside" id="Qg9-z6-yl6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OrLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="3S0-b2-uC7">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="272" id="CL6-DP-JBX"/>
+                                    <constraint firstAttribute="height" constant="45" id="Qf1-Js-rtL"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLJ-f1-PCh">
+                                <frame key="frameInset" minX="52" minY="203" width="273" height="46"/>
+                                <color key="backgroundColor" red="0.47293960492227982" green="0.040081791700221241" blue="0.42681091763951257" alpha="0.39752970950704225" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Po2-pa-vo5"/>
+                                    <constraint firstAttribute="width" constant="273" id="m4X-oj-GBE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                <state key="normal" title="Login Anonymously">
+                                    <color key="titleColor" red="0.6775325633313074" green="0.89129290803108807" blue="0.8805866365629299" alpha="0.80493507922535212" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLoginAnonymouslyAction:" destination="BYf-m5-siJ" eventType="touchUpInside" id="99D-qg-W4Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QLJ-f1-PCh" firstAttribute="centerX" secondItem="poj-2o-0zO" secondAttribute="centerX" id="DSZ-hv-cNP"/>
+                            <constraint firstItem="bdt-3v-kJX" firstAttribute="centerX" secondItem="poj-2o-0zO" secondAttribute="centerX" id="GqQ-pl-G6u"/>
+                            <constraint firstItem="LvH-lD-ZcI" firstAttribute="top" secondItem="poj-2o-0zO" secondAttribute="top" id="HDO-jB-9Pv"/>
+                            <constraint firstItem="LvH-lD-ZcI" firstAttribute="leading" secondItem="poj-2o-0zO" secondAttribute="leading" id="Neo-Vi-stx"/>
+                            <constraint firstAttribute="trailing" secondItem="LvH-lD-ZcI" secondAttribute="trailing" id="Vf8-Ge-rQf"/>
+                            <constraint firstItem="3S0-b2-uC7" firstAttribute="top" secondItem="QLJ-f1-PCh" secondAttribute="bottom" constant="80" id="bsC-zR-2MD"/>
+                            <constraint firstItem="LvH-lD-ZcI" firstAttribute="centerX" secondItem="poj-2o-0zO" secondAttribute="centerX" id="dIx-kS-Uth"/>
+                            <constraint firstItem="bdt-3v-kJX" firstAttribute="top" secondItem="3S0-b2-uC7" secondAttribute="bottom" constant="76" id="g0y-Eo-wOo"/>
+                            <constraint firstItem="zHz-0X-u4A" firstAttribute="top" secondItem="LvH-lD-ZcI" secondAttribute="bottom" id="hlo-wm-bfI"/>
+                            <constraint firstItem="3S0-b2-uC7" firstAttribute="centerX" secondItem="poj-2o-0zO" secondAttribute="centerX" id="lZ5-mc-5jc"/>
+                            <constraint firstItem="zHz-0X-u4A" firstAttribute="top" secondItem="bdt-3v-kJX" secondAttribute="bottom" constant="97" id="x9g-ZJ-hOI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="diG-k2-zbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-234.40000000000001" y="139.880059970015"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="d72-lz-IX6">
+            <objects>
+                <viewController id="avy-74-o6K" customClass="ChatViewController" customModule="Zchat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sZn-8b-Pz0"/>
+                        <viewControllerLayoutGuide type="bottom" id="lEK-Og-NeN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L9v-rK-MO1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="c1I-9q-EBg">
+                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="m9k-k3-X3Q">
+                            <color key="tintColor" red="0.14933668788830246" green="0.10093026637154796" blue="0.6464135362694301" alpha="0.80493507922535212" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="barbtnLogOutAction:" destination="avy-74-o6K" id="5n1-qw-rIG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4y9-1d-Lwl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528.8" y="182.15892053973016"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PGU-Dz-2Nv">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationVC" automaticallyAdjustsScrollViewInsets="NO" id="uOh-In-6pS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="RGG-Yc-j8y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.52151473445595853" green="0.31465338607150822" blue="0.394634914642708" alpha="0.80493507922535212" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="avy-74-o6K" kind="relationship" relationship="rootViewController" id="KAN-5m-XuS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IYq-X9-kBe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="589.60000000000002" y="182.15892053973016"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AlightTiger.jpg" width="1919" height="1804"/>
+        <image name="OrLine.png" width="864" height="45"/>
+        <image name="googleButton.png" width="120" height="120"/>
+    </resources>
+</document>
