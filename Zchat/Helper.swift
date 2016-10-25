@@ -1,5 +1,4 @@
 import Foundation
-import UIKit
 import FirebaseAuth
 import GoogleSignIn
 import FirebaseDatabase
